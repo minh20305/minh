@@ -1,0 +1,326 @@
+
+/* font chu */
+@font-face {
+    font-family: "myfont";
+    src: url(./font/amazone.ttf);
+}
+/* điều chỉnh header */
+header{
+    background-color:black;
+    position: relative;
+    justify-content: center; 
+    align-items: center; 
+
+}
+header>h1{
+    font-family: myfont;
+    font-size:5rem;
+    margin:0;
+    color: yellow;
+}
+header>img{
+    float:left;
+    height:230px;
+    width: 250px;
+}
+button{
+    
+    border-radius: 50%;
+    background-color: rgb(87, 117, 117);
+    cursor: pointer;
+    left:0;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+
+header>.sign{
+   margin-right:1rem;
+}
+
+.sign>ul>li>a:hover{
+    color:red;
+    text-decoration:underline;
+}
+li{
+    list-style-type: none;
+}
+
+
+footer{
+    border-top: 5px solid white;
+    color:white;
+    margin-top: 2.5rem;
+    bottom: 0;
+    
+}
+
+.sign>ul>li>a{
+    display: block;
+    padding-left:2rem;
+    font-size: 1.5rem;
+}
+
+.sign{
+    position: absolute; 
+    right: 0; 
+    top:0.5rem;
+}
+
+header h1 {
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    font-weight: bold; /* Đậm chữ */
+    flex: 1; /* Cho phép tiêu đề chiếm không gian còn lại trong header */
+    margin-right: auto;
+}
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+/* điều chỉnh menu */
+.menu{
+    list-style-type: none;
+    display:flex;
+    margin:0;
+    padding:0;
+    border-radius: 20px;
+}
+.menu>li>a{
+    text-decoration: none;
+    color:yellow;
+    display:block;
+    padding: 1rem;
+    background-color: rgb(43, 38, 38);
+}
+.menu>li>a:hover{
+    background-color: yellow;
+    color:black;
+}
+nav{
+    display:flex;
+    background-color: rgb(43, 38, 38);
+    justify-content: space-between;
+    width:100%;
+    border-right:1px solid white;
+    border-radius: 20px;
+}
+.input{
+    height:0.5rem;
+    border-radius: 1.5rem;
+    width:10rem;
+    margin-top:0.5rem;
+    padding: 1rem;
+}
+.icon{
+    align-items: center;
+    justify-content: center;
+    margin:0.9rem;
+    transform: translateX(-3rem);
+}
+
+.menu>li:first-child>a{
+    border-radius: 20px 0 0 20px;
+}
+.menu>li>a{
+    position: relative;
+}
+.icon_1{
+    position: absolute;
+    right:2.5rem;
+}
+.menu>li>a>div{
+    opacity: 0;
+}
+.menu>li>a>.icon_1{
+    transition: 0.5s;
+}
+.menu>li>a:hover>.icon_1{
+    transform: translateY(-50px);
+}
+.menu>li>a:hover>div{
+    opacity:1;
+}
+/* Chỉnh các loại sách kéo ngang  */
+.contain{
+    width:100%;
+    position: relative;
+    height:20rem;
+    overflow: hidden;
+    background-color: black;
+}
+
+.btn{
+    position:absolute;
+    width:100%;
+    justify-content:space-between;
+    top:50%;
+}
+
+.btn i{
+    display: flex;
+    font-size: 1.5rem;
+    color:wheat;
+    background-color: rgba(211, 211, 211, 0.2) ;
+    width:2rem;
+    height:2rem;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    opacity:0;
+    transform: all 0.3s ease;
+}
+
+.btn i:hover{
+    transform: translateY(-20px);
+}
+
+.contain:hover .btn i{
+    opacity: 1;
+}
+
+.magas{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contain-magas{
+    width:100%;
+    position: relative;
+    transition:all 0.3s ease;
+    margin-top:1rem;
+
+}
+
+.maga{
+    width: 25%;
+    box-sizing: border-box;
+}
+.magas:nth-child(1){
+    transform: translateX(0%);
+}
+.magas:nth-child(2){
+    transform: translateX(100%);
+}
+
+.magas:nth-child(3){
+    transform: translateX(200%);
+}
+
+h3{
+    margin:0;
+}
+
+.maga>a>img{
+    width:13rem;
+    height:16rem;
+}
+/* Thiết lập cơ bản cho phần container */
+
+  
+  
+/* nut di chuyen ve dau trang */
+.go-to-top{
+    position: fixed;
+    right: 4%;
+    bottom: 4%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    color:darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+.go-to-top i {
+    margin: 0; 
+    padding: 0;
+}
+
+.active{
+    border-bottom: 3px solid green;
+}
+
+.pic>a>img{
+    height: 12rem;
+    width: 10rem;
+}
+
+.maga-x>.cont{
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+.left{
+    width:30%;
+}
+
+.mid,.right{
+    width:30%;
+}
+
+.title{
+    display: block;
+    border-left: 5px solid yellow;
+    padding-left: 0.5rem;
+    margin: 1rem;
+}
+
+.maga-x{
+    margin:0.5rem;
+}
+
+.maga-x>div>a, .maga>a {
+    color:white;
+}
+
+.maga-y>div>a{
+    color:white;
+}
+
+.maga-x>div>a:hover,.maga>a:hover {
+    text-decoration: underline;
+}
+
+.maga-y>div>a:hover{
+    text-decoration: underline;
+}
+
+.pic1>a>img{
+    height: 25rem;
+    width: 18rem;
+}
+
+.maga-y{
+    margin-top:4rem;
+    text-align: center;
+}
+
+.topic{
+    width:100%;
+
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.topic-title{
+    width:15rem;
+    border-bottom: 5px solid yellow;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cont{
+    text-align: center;
+}
+

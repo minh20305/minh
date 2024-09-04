@@ -1,0 +1,184 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+section {
+    width: 400px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow:
+        0 0 10px rgba(0, 239, 255, 0.5),
+        0 0 20px rgba(0, 239, 255, 0.3),
+        0 0 30px rgba(0, 239, 255, 0.2),
+        0 0 40px rgba(0, 239, 255, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    animation: hue-rotate-animation 5s linear infinite;
+}
+
+@keyframes hue-rotate-animation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+ul.tab {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+ul.tab>li {
+    list-style-type: none;
+    flex: 1;
+    margin-right: 10px;
+}
+
+ul.tab>li:last-child {
+    margin-right: 0;
+}
+
+ul.tab>li>a {
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+ul.tab>li>a:hover,
+ul.tab>li>a.active {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.tab-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tab-content form {
+    display: none;
+}
+
+.tab-content form.active {
+    display: block;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+.input-group .show-password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.input-group .show-password-btn:focus {
+    outline: none;
+}
+
+.button-container {
+    display: inline-block;
+    width: auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px 0;
+    background-color: #0ef;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.button-container:hover {
+    background-color: #0b7;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.icon ul li {
+    margin: 0 10px;
+}
+
+.icon ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.icon ul li a:hover {
+    color: #0ef;
+}
+
+#error-message,
+#error-message2 {
+    color: white;
+    display: none;
+}
+
+a.close-button {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    font-size: 5rem;
+    text-decoration: none;
+}
