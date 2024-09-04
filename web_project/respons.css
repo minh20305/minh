@@ -1,0 +1,173 @@
+@media (max-width: 1200px) and (min-width:800px){
+    .flex>.right{
+        display:none;
+    }
+    
+    .mid{
+        width:34%;
+    }
+
+    .mid>.maga-y{
+        margin-top: 4rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    header h1{
+        font-size: 4rem;
+    }
+    header>img{
+        width:10rem;
+        height: 10rem;
+    }
+
+    .space-around>.maga-y>.pic1>a>img{
+        width:13rem;
+        height:16rem;
+    }
+
+    .maga>a>img{
+        width:10rem;
+        height:13rem;
+    }
+
+    .contain{
+        height:17rem;
+    }
+
+    .wrap>.maga-y>.pic1>a>img{
+        width:12rem;
+        height:15rem;
+    }
+}
+@media (max-width: 799px) and (min-width:451px) {
+    .flex>.mid{
+        display:none;
+    }
+    
+   .right{
+        margin-left:7rem;
+   }
+
+    header h1{
+        font-size: 3rem;
+    }
+    header>img{
+        width:10rem;
+        height: 10rem;
+    }
+
+    .space-around>.maga-y>.pic1>a>img{
+        width:9rem;
+        height:11rem;
+    }
+
+    .maga>a>img{
+        width:7rem;
+        height:9rem;
+    }
+
+    .contain{
+        height:12rem;
+    }
+
+    .wrap>.maga-y>.pic1>a>img{
+        width:8rem;
+        height:10rem;
+    }
+
+    ul.flex>li> a{
+        font-size:1.0rem;
+    }
+
+    .topic-title h1{
+        font-size: 1.5rem;
+    }
+
+    .contain h3{
+        font-size:0.8rem;
+    }
+
+    .top-bar>.top-bar-list>li>a,.bot-bar>.bot-bar-list>li>a{
+        font-size: 1rem;
+    }
+
+   footer h1{
+    font-size: 1rem;
+   }
+   
+}
+
+
+@media (max-width: 450px) {
+    .flex>.right,.flex>.mid{
+        display:none;
+    }
+    
+    .left>.maga-x{
+        margin-left:6rem;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header>img{
+        width:5rem;
+        height: 5rem;
+    }
+
+    .space-around>.maga-y>.pic1>a>img{
+        width:8rem;
+        height:10rem;
+    }
+
+    .maga>a>img{
+        width:3rem;
+        height:5rem;
+    }
+
+    .contain{
+        height:12rem;
+    }
+
+    .wrap>.maga-y>.pic1>a>img{
+        width:5rem;
+        height:7rem;
+    }
+    ul>li>a{
+        width: 2rem;
+    }
+    header>img{
+        overflow: auto;
+    }
+    ul.flex>li> a{
+        font-size:0.5rem;
+    }
+    .sign{
+        margin:0;
+    }
+    .contain h3{
+        font-size:0.5rem;
+    }
+    footer>.foot{
+        font-size: 0.5rem;
+
+    }
+    footer h1{
+        font-size: 1rem;
+    }
+    .symbol>li>a{
+        width:3rem;
+    }
+   
+    .cont{
+        font-size: 1rem;
+    }
+    .input{
+        width:6rem;
+    }
+}
+
+
+
+
+  

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạp chí Khoa Học Quốc Tế</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design2.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="./pic/logo.jpg">
+    <link rel="stylesheet" href="respons.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="content2.js"></script>
+    
+</head>
+<body style="background-color: black;">
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>Bạn muốn đọc tạp chí của chúng tôi?</h2>
+            <p>Hãy đăng nhập để tận hưởng nó</p>
+            <button id="login-modal-btn">Đăng Nhập</button>
+        </div>
+    </div>
+    <div class="bar" id="bar">
+        <div class="top-bar"> 
+            <div class="btn-x"><i class="fa-solid fa-x"></i></div>
+            <h2 style="color:rgb(64, 62, 62);text-align: center;padding-top:4rem;">Tạp chí khoa học</h2>
+            <ul class="top-bar-list">
+                <li><a href="https://www.researchgate.net/">Cộng đồng</a></li>
+                <li><a href="#">Chia sẻ</a>
+                    <ul class="symbol">
+                        <li class="flex"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="padding-right: 1rem;"></i>Facebook</a></li>
+                        <li class="flex"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter" style="padding-right: 1rem;"></i>Twitter X</a></li>
+                        <li class="flex"><a href="https://drive.google.com" target="_blank"><i class="fa-brands fa-google-drive" style="padding-right: 1rem;"></i>Google drive</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="bot-bar">
+            <ul class="bot-bar-list">
+                <li><a href="https://www.privacypolicies.com/privacy-policy/">Chính sách bảo mật</a></li>
+                <li><a href="https://www.privacypolicies.com/terms-of-service/">Điều khoản dịch vụ</a></li>
+                <li><a href="https://www.surveymonkey.com/r/feedback">Gửi phản hồi</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="flex">
+        <img src="./pic/logo.jpg" alt="logo">
+        <h1 > Tạp chí khoa học </h1>
+        <div class="sign">
+            <ul class="flex" id="user">
+                <li><a href="/signin_up.htm?tab=login">Đăng nhập</a></li>
+                <li><a href="/signin_up.htm?tab=signup">Đăng kí</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav >
+           <ul class="menu">
+                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a  href="#trangchu"><i class="fa-solid fa-house icon_1 flex"></i> <div>Trang chủ</div> </a></li>
+                <li ><a href="#chude"><i class="fa-solid fa-book-open icon_1 flex"></i><div>Chủ đề</div></a>
+                </li>
+                <li><a href="#xemthem"><i class="fa-solid fa-ellipsis icon_1 flex"></i><div>Xem thêm</div></a></li>
+            </ul>
+           
+            <input style="margin-left:auto;" class="input" type="search" name="search" placeholder="..."/>
+            <div class="icon"><button><i class="fa fa-search"></i></button></div> 
+           
+    </nav>
+   <main style="background-color: black; color:white">
+    <div class="tab-content">
+        <div id="trangchu" >
+            <div class="flex">
+                <div class="left">
+                    <div class="title">
+                        <h1>Báo hôm nay</h1>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/khxh.png" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học xã hội</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/khgd.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Giáo dục Việt Nam</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/khgtvt.png" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học giao thông vận tải</h3></a>  
+                        </div>
+                    </div>
+               </div>
+               <div class="mid">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/khcn3.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học công nghệ</h3></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/khcn2.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học công nghệ</h3></a>  
+                        </div>
+                    </div>
+                </div>
+               <div class="right">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/khcn1.png" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học công nghệ</h3></a>  
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="flex">
+                <div class="left">
+                    
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/khxh2.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học xã hội</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/ktpt.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kinh tế phát triển</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/dhsp.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tạp chí đại học sư phạm TPHCM</h3></a>  
+                        </div>
+                    </div>
+               </div>
+               <div class="mid">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/dhtl.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tạp chí đại học thủy lợi</h3></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/dhtnmt.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tạp chí đại học tài nguyên môi trường</h3></a>  
+                        </div>
+                    </div>
+                </div>
+               <div class="right">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/khcn4.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học công nghệ</h3></a>  
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="flex">
+                <div class="left">
+                    <div class="title">
+                        <h1>Cũ hơn</h1>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/khxh.png" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học xã hội</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/khgd.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Giáo dục Việt Nam</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-x flex">
+                        <div class="pic">
+                            <a href="#"><img src="./pic/khgtvt.png" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học giao thông vận tải</h3></a>  
+                        </div>
+                    </div>
+               </div>
+               <div class="mid">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/kt-tv.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">   
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khí tượng thủy văn</h3></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/dhm-dc.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Đại học mỏ - địa chất</h3></a>  
+                        </div>
+                    </div>
+                </div>
+               <div class="right">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/bdkh.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tạp chí biến đổi khí hậu</h3></a>  
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <div id="chude" >
+            <div class="topic ">
+                <div class="flex" style="justify-content: center;">
+                     <div></div>
+                    <div class="topic-title"><h1>CÔNG NGHỆ</h1></div>
+                    <div></div>
+                </div>
+                <div class="flex space-around">
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/khcn1.png" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học công nghệ</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/khcn2.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học công nghệ</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-y">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/khcn3.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Khoa học công nghệ</h3></a>  
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="topic ">
+                <div class="flex" style="justify-content: center;">
+                     <div></div>
+                    <div class="topic-title"><h1>MÔI TRƯỜNG</h1></div>
+                    <div></div>
+                </div>
+                <div class="flex space-around">
+                    <div class="maga-y w33">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/bdkh.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Biến đổi khí hậu</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-y w33">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/dhtnmt.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Đại học tài nguyên môi trường</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-y w33">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/mtruong.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tạp chí môi trường</h3></a>  
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="topic ">
+                <div class="flex" style="justify-content: center;">
+                     <div></div>
+                    <div class="topic-title"><h1>MỘT SỐ ĐẠI HỌC</h1></div>
+                    <div></div>
+                </div>
+                <div class="flex space-around" >
+                    <div class="maga-y w33">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/dhtl.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Đại học thủy lợi</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-y w33">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/dhsp.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Đại học sư phạm HCM</h3></a>  
+                        </div>
+                    </div>
+                    <div class="maga-y w33">
+                        <div class="pic1">
+                            <a href="#"><img src="./pic/dhm-dc.jpg" alt=""></a>
+                        </div>
+                        <div class="cont">
+                          
+                            <a href="#"><h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Đại học mỏ địa chất</h3></a>  
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div id="xemthem">
+            <section class="contain">
+                <div class="contain-magas">
+                    <div class="magas flex">
+                        <div class="maga">
+                            <a href="#"><img src="./pic/ktpt.jpg" alt=""></a>
+                            <a href="#"><h3>Kinh tế phát triển</h3></a>
+                        </div >
+                        <div class="maga">
+                            <a href="#"><img src="./pic/khgd.jpg" alt=""></a>
+                            <a href="#"><h3>Khoa học giáo dục</h3></a>
+                        </div>
+                        <div class="maga">
+                            <a href="#"><img src="./pic/khgtvt.png" alt=""></a>
+                            <a href="#"><h3>Khoa học giao thông vận tải</h3></a>
+                        </div>
+                        <div class="maga">
+                            <a href="#"><img src="./pic/khxh.png" alt=""></a>
+                            <a href="#"><h3>Khoa học xã hội</h3></a>
+                        </div>
+                   </div>
+                   <div class="magas flex">
+                        <div class="maga">
+                            <a href="#"><img src="./pic/khxh.png" alt=""></a>
+                            <a href="#"><h3>Khoa học xã hội</h3></a>
+                        </div >
+                        <div class="maga">
+                            <a href="#"><img src="./pic/khxh2.jpg" alt=""></a>
+                            <a href="#"><h3>Khoa học xã hội</h3></a>
+                        </div>
+                        <div class="maga">
+                            <a href="#"><img src="./pic/khcn3.jpg" alt=""></a>
+                            <a href="#"><h3>Khoa học công nghệ</h3></a>
+                        </div>
+                        <div class="maga">
+                            <a href="#"><img src="./pic/dhtl.jpg" alt=""></a>
+                            <a href="#"><h3>Đại học thủy lợi</h3></a>
+                        </div>
+                    </div>
+                    <div class="magas flex">
+                        <div class="maga">
+                            <a href="#"><img src="./pic/dhsp.jpg" alt=""></a>
+                            <a href="#"><h3>Đại học sư phạm</h3></a>
+                        </div >
+                        <div class="maga">
+                            <a href="#"><img src="./pic/bdkh.jpg" alt=""></a>
+                            <a href="#"><h3>Biến đổi khí hậu</h3></a>
+                        </div>
+                        <div class="maga">
+                            <a href="#"><img src="./pic/mtruong.jpg" alt=""></a>
+                            <a href="#"><h3>Tạp chí môi trường</h3></a>
+                        </div>
+                        <div class="maga">
+                            <a href="#"><img src="./pic/kt-tv.jpg" alt=""></a>
+                            <a href="#"><h3>Khí tượng thủy văn</h3></a>
+                        </div>
+                   </div>
+                </div>
+                <div class="btn flex">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+               </div>       
+            </section>
+        </div>
+    </div>
+   </main>
+   <div class="go-to-top effect">
+        <i class="fa-solid fa-chevron-up"></i>
+   </div>
+    <footer>
+        <h1>Copyright &copy; by Nhat Minh & Huy Bui 2024</h1>
+        <div class="foot">
+            <div>
+                <ul class="symbol">
+                    <h3>Liên hệ</h3>
+                    <li><a href="#">Địa chỉ: Khu dân cư Nhơn Đức, Nhà Bè</a></li>
+                    <li><a href="#">Số điện thoại: 0903.xxx.xxx</a></li>
+                    <li><a href="#">Thông tin liên quan</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <ul class="symbol">
+                    <h3>Theo dõi</h3>
+                    <li class="flex"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="padding-right: 1rem;"></i>Facebook</a></li>
+                    <li class="flex"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter" style="padding-right: 1rem;"></i>Twitter X</a></li>
+                    <li class="flex"><a href="https://drive.google.com" target="_blank"><i class="fa-brands fa-google-drive" style="padding-right: 1rem;"></i>Google drive</a></li>
+                </ul>
+            </div>
+    </footer>
+    <script src="content.js"></script>
+</body>
+</html>

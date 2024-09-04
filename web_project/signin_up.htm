@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Up</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="signin_up.css">
+    <script src="signin_up.js"></script>
+</head>
+
+<body>
+    <a href="#" class="close-button">&times;</a>
+    <section>
+        <ul class="tab">
+            <li><a href="#tab1" class="active">Log in</a></li>
+            <li><a href="#tab2">Sign up</a></li>
+        </ul>
+        <div class="tab-content">
+            <form action="" id="tab1">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password1" placeholder="Password">
+                    <button type="button" class="show-password-btn">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+                <input type="button" value="Log in" class="button-container" id="login-button">
+                <div id="error-message"></div>
+            </form>
+            <form action="" id="tab2">
+                <div class="input-group">
+                    <input type="text" id="username2" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password2" placeholder="Password">
+                    <button type="button" class="show-password-btn">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirm password">
+                    <button type="button" class="show-password-btn">
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+                <input type="button" value="Sign up" class="button-container" id="signup-button">
+                <div id="error-message2"></div>
+            </form>
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
